@@ -1,7 +1,6 @@
 box: java
 dev:
   steps:
-    - script:
-      name: gradle build
-      code: |
-        ./gradlew build
+    - script: ./gradlew build
+      name: build
+      code: ./gradlew build
