@@ -1,4 +1,4 @@
-box: cattaka/android@1.5.0-r2 
+box: cattaka/android@1.5.0-r2
 build:
   steps:
     - script:
@@ -10,9 +10,9 @@ build:
           echo $ANDROID_BUILD_TOOLS
           echo $ANDROID_UPDATE_FILTER
     - android-sdk-update:
-        filter: sysimg-21
+        filter: sysimg-23
     - setup-android-emulator:
-        target: android-21
+        target: android-23
     - script:
         name: run gradle createDebugCoverageReport
         code: |
