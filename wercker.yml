@@ -1,4 +1,4 @@
-box: wercker/android
+box: wercker/android@2.0.0
 # Build definition
 build:
   # The steps that will be executed on build
@@ -15,4 +15,4 @@ build:
         name: run gradle
         code: |
           gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
-          
+ 
