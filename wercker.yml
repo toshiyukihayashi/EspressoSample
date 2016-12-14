@@ -1,4 +1,4 @@
-box: java 8
+box: java
 dev:
   steps:
     - script:
