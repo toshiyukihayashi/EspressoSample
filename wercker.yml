@@ -1,13 +1,9 @@
-box: jacekmarchwicki/android
+box: java
+
+# defining the dev pipeline
 dev:
   steps:
     - script:
-      name: run gradle
+      name: gradle bootRun
       code: |
         ./gradlew bootRun
-build:
-  steps:
-    - script:
-        name: run gradle
-        code: |
-          ./gradlew build

@@ -14,17 +14,78 @@
         android:text="Hello World!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="124dp"
         android:textSize="@dimen/abc_action_bar_stacked_max_height"
-        android:id="@+id/helloWorldTextView" />
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Author Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textAuthorName"
+        android:layout_below="@+id/textView"
+        android:textSize="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Login User Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLoginuserName"
+        android:textSize="30dp"
+        android:layout_below="@+id/textAuthorName"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Change Text"
-        android:id="@+id/changeTextButton"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:text="Log Info"
+        android:id="@+id/LoginfoButton"
+        android:layout_below="@+id/textLoginuserName"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Debug"
+        android:id="@+id/LogdebugButton"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/LoginfoButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Verbose"
+        android:id="@+id/LogVerboseButton"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/LogdebugButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG WARN"
+        android:id="@+id/LogwarnButton"
+        android:layout_below="@+id/LogVerboseButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG ERROR"
+        android:id="@+id/LogerrorButton"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/LogwarnButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
